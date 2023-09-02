@@ -20,11 +20,14 @@ locals {
 resource "aws_ecr_repository" "sample" {
   name                 = "stressbox"
   image_tag_mutability = "MUTABLE"
+  force_delete         = true
 
   image_scanning_configuration {
     scan_on_push = true
   }
 }
+
+### EC2 ###
 
 data "aws_ami" "ubuntu" {
   most_recent = true
