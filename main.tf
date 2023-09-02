@@ -59,7 +59,7 @@ locals {
 }
 
 resource "aws_lambda_function" "main" {
-  function_name    = "lambda-cloudtrail-config"
+  function_name    = "lambda-go"
   role             = aws_iam_role.lambda.arn
   filename         = local.filename
   source_code_hash = filebase64sha256(local.filename)
