@@ -15,9 +15,9 @@ terraform apply -auto-approve
 
 The configuration will create the following resources:
 
-- **Lambda**
-- **ECR**
-- **EC2**
+- Lambda
+- ECR
+- EC2
 
 To scan an ECR image, upload one if none is available:
 
