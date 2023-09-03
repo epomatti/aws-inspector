@@ -2,7 +2,7 @@
 
 Amazon Inspector vulnerability scan.
 
-👉 Set up these services manually:
+👉 Before you start, set up these services manually:
 - Use the Console to enable **Inspector**.
 - **Fleet Manager** to managed EC2 instances, `Default Host Management` is enough for testing.
 
